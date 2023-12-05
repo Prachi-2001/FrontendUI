@@ -1,0 +1,130 @@
+.cymulate-nav {
+  background-color: #221f28;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  position: relative;
+  height: fit-content;
+  z-index: 8555555;
+}
+.cymate-nav-icon {
+  display: flex;
+  align-items: center;
+}
+.cymate-nav-icon-logo-image {
+  width: 5vw;
+  height: 10vh;
+  padding: 8px 8px;
+}
+.cymate-nav-icon-logo-text {
+  position: relative;
+  right: 14px;
+}
+.cymate-nav-right-lists {
+  display: flex;
+  padding-right: 15px;
+  gap: 20px;
+  list-style: none;
+  font-weight: 600;
+  font-size: medium;
+}
+.cymulate-demo-text {
+  position: relative;
+  right: 25px;
+  font-weight: 400;
+  font-size: x-large;
+  color: rgb(74, 142, 252);
+  cursor: pointer;
+}
+.cymulate-demo-text-globe {
+  margin-right: 2px;
+  color: white;
+  font-weight: 500;
+}
+.cymulate-demo {
+  position: relative;
+  bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .cymate-nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .cymate-nav-icon-logo-image {
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+    padding: 8px;
+  }
+
+  .cymate-nav-icon-logo-text {
+    display: none;
+  }
+
+  .cymulate-demo-text {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(0, 98, 255);
+  }
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .cymate-nav-right-lists {
+    display: none;
+  }
+
+  .menu-open .cymate-nav-right-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cymate-nav-icon-logo-text {
+    font-size: 0.9rem;
+  }
+
+  .cymulate-demo-text {
+    font-size: 1rem;
+  }
+
+  .cymate-nav-right-lists {
+    font-size: 1rem;
+  }
+}
