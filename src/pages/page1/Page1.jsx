@@ -10,7 +10,6 @@ import {
   SiSecurityscorecard,
   SiWebmoney,
 } from "react-icons/si";
-import { IoSpeedometerOutline } from "react-icons/io5";
 const Page1 = () => {
   const [showSidebox, setShowSidebox] = useState(true);
   const [showLeftBox, setShowLeftBox] = useState(true);
@@ -49,10 +48,6 @@ const Page1 = () => {
   }, []);
   const toggleSidebox = () => {
     setShowSidebox(!showSidebox);
-  };
-
-  const toggleLeftMenu = () => {
-    setShowLeftBox(!showLeftBox);
   };
 
   return (

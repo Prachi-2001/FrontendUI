@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css"; // Create a CSS file for your styles
+import "./Sidebar.css";
 import { BsFire } from "react-icons/bs";
 import { SiAmazonsimpleemailservice } from "react-icons/si";
 import { SiWebmoney } from "react-icons/si";

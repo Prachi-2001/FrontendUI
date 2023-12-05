@@ -10,11 +10,7 @@ const Sidebox = () => {
         <div className="right-side-menu-items" key={index}>
           <div className="adjustment">
             <div className="logo-container">
-              <img
-                src={item.image}
-                alt={`Image ${index}`}
-                className="logo-image"
-              />
+              <img src={item.image} alt="" className="logo-image" />
             </div>
             <div className="data-item">
               <p className="vector-p">

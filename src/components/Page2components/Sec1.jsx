@@ -73,7 +73,7 @@ export default function Section1() {
           <button
             onClick={() => setIsActive(2)}
             className={`md:p-2 sm:p-1 md:px-4 px-2 border-b-2 ${
-              isActive == 2 ? "border-purleBg" : "border-transparent"
+              isActive === 2 ? "border-purleBg" : "border-transparent"
             }`}
           >
             3 Months
@@ -88,7 +88,7 @@ export default function Section1() {
           </button>
         </div>
         <div className="w-full h-32 overflow-x-auto">
-          <img src={graph} alt="Image" className="w-auto h-32 object-contain" />
+          <img src={graph} alt="" className="w-auto h-32 object-contain" />
         </div>
       </div>
     </section>
