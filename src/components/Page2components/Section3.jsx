@@ -1,7 +1,6 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import SmallSection from "./SmallSection";
-import hex from './hex.png'
-import hnew from './hnew.png'
+import hnew from "./hnew.png";
 export default function Section3() {
   return (
     <section className="flex lg:flex-row flex-col gap-4">
@@ -10,7 +9,10 @@ export default function Section3() {
           <h2>Top choke points</h2>
           <button className="text-xs">View all</button>
         </div>
-        <div className="w-full h-full rounded flex md:flex-row flex-col-reverse p-4 md:px-8 items-center gap-5" style={{backgroundColor:"#202128"}}>
+        <div
+          className="w-full h-full rounded flex md:flex-row flex-col-reverse p-4 md:px-8 items-center gap-5"
+          style={{ backgroundColor: "#202128" }}
+        >
           <div className="w-full flex flex-col gap-2">
             <h2 className="md:text-base text-sm">
               Top 3 Entities which are part of the most attack vectors to
@@ -42,7 +44,9 @@ export default function Section3() {
                   </td>
                 </tr>
                 <tr className="border-b border-gray-600">
-                  <td className="py-1 px-4">Compute Engine default service account</td>
+                  <td className="py-1 px-4">
+                    Compute Engine default service account
+                  </td>
                   <td className="py-1 flex items-center justify-end gap-2 px-4">
                     141
                     <div className="flex rounded">
@@ -78,7 +82,7 @@ export default function Section3() {
           </div>
           <div className="">
             {/* <div className="w-32 h-32 border-[5px] rounded-full"></div> */}
-            <img src={hnew} alt="" className=""/>
+            <img src={hnew} alt="" className="" />
           </div>
         </div>
       </div>
@@ -88,9 +92,9 @@ export default function Section3() {
           <button className="text-xs">View all</button>
         </div>
         <div className="w-full flex-grow md:flex-row flex-col flex gap-4">
-          <SmallSection affected={10} critical={45}/>
-          <SmallSection affected={39} critical={31}/>
-          <SmallSection affected={9} critical={29}/>
+          <SmallSection affected={10} critical={45} />
+          <SmallSection affected={39} critical={31} />
+          <SmallSection affected={9} critical={29} />
         </div>
       </div>
     </section>
